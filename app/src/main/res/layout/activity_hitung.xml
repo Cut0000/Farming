@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/activity_margin_horizontal"
+    android:paddingEnd="@dimen/activity_margin_horizontal"
+    android:paddingTop="@dimen/activity_margin_vertical"
+    android:paddingBottom="@dimen/activity_margin_vertical"
+    tools:context=".HitungTanam">
+
+    <EditText
+        android:id="@+id/edt_bil1"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_margin_vertical"
+        android:hint="@string/bilangan_pertama"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edt_bil2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bilangan_kedua"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="@dimen/activity_margin_vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="?attr/buttonBarStyle"
+        android:layout_marginBottom="@dimen/activity_margin_vertical">
+
+        <Button
+            android:id="@+id/btn_division"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:text="@string/btnDivision"
+            android:textColor="#473C3C"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#1C1A1A"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:text="@string/del"
+            android:textColor="#570B25"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_vertical"
+        android:gravity="center"
+        android:text="@string/result"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_vertical"
+        android:gravity="center"
+        android:text="Result diatas merupakan jumlah Benih jagung yang harus ditanam"
+        android:textColor="#881B31"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
